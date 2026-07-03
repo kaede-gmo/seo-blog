@@ -188,11 +188,37 @@ llms_explanation: Guide to managing websites using smartphones, including tools,
   display: inline-block;
 }
 
+.zcom-cta-button-secondary {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #0066cc;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  border: 2px solid #0066cc;
+  transition: all 0.2s;
+}
+
+.zcom-cta-button-secondary:hover {
+  background-color: #0066cc;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.25);
+}
+
 @media (max-width: 600px) {
   .zcom-cta-button {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .zcom-cta-button-secondary {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 
@@ -293,6 +319,97 @@ figcaption {
   margin-top: 0.75rem;
   font-style: italic;
   line-height: 1.6;
+}
+
+/* Red highlight overlays for cPanel screenshots */
+.zcom-cpanel-screenshot::after {
+  content: '';
+  position: absolute;
+  border: 3px solid #ff3333;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.zcom-cpanel-screenshot {
+  position: relative;
+}
+
+/* SSL Status - highlight Security section (bottom right area) */
+.zcom-cpanel-screenshot.ssl-status::after {
+  width: 220px;
+  height: 140px;
+  top: 180px;
+  left: 480px;
+}
+
+/* File Manager - highlight File Manager icon (left side, upper Files section) */
+.zcom-cpanel-screenshot.file-manager::after {
+  width: 160px;
+  height: 80px;
+  top: 80px;
+  left: 20px;
+}
+
+/* Backup Wizard - highlight Backup Wizard icon (left side, Files section) */
+.zcom-cpanel-screenshot.backup-wizard::after {
+  width: 160px;
+  height: 80px;
+  top: 140px;
+  left: 20px;
+}
+
+/* Metrics - highlight Metrics area (left side, Metrics section) */
+.zcom-cpanel-screenshot.metrics::after {
+  width: 300px;
+  height: 200px;
+  top: 50px;
+  left: 20px;
+}
+
+/* Redirects - highlight Redirects in Domains area (center, Domains section) */
+.zcom-cpanel-screenshot.redirects::after {
+  width: 160px;
+  height: 80px;
+  top: 120px;
+  left: 280px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust highlight positions for mobile */
+  .zcom-cpanel-screenshot.ssl-status::after {
+    width: 180px;
+    height: 120px;
+    top: 150px;
+    left: 380px;
+  }
+
+  .zcom-cpanel-screenshot.file-manager::after {
+    width: 140px;
+    height: 70px;
+    top: 70px;
+    left: 15px;
+  }
+
+  .zcom-cpanel-screenshot.backup-wizard::after {
+    width: 140px;
+    height: 70px;
+    top: 120px;
+    left: 15px;
+  }
+
+  .zcom-cpanel-screenshot.metrics::after {
+    width: 260px;
+    height: 180px;
+    top: 40px;
+    left: 15px;
+  }
+
+  .zcom-cpanel-screenshot.redirects::after {
+    width: 140px;
+    height: 70px;
+    top: 100px;
+    left: 240px;
+  }
 }
 </style>
 
@@ -398,7 +515,7 @@ figcaption {
 
 <figure>
   <div class="zcom-cpanel-screenshot ssl-status"></div>
-  <figcaption>cPanel Security section showing SSL/TLS Certificates. Miguel accesses this same tool from his phone browser.</figcaption>
+  <figcaption><strong>Red box shows:</strong> Security section with SSL/TLS Certificates tool. Miguel checks his certificate status in seconds from his phone browser.</figcaption>
 </figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★★</strong></p>
@@ -426,7 +543,7 @@ figcaption {
 
 <figure>
   <div class="zcom-cpanel-screenshot file-manager"></div>
-  <figcaption>cPanel Files section featuring File Manager and other file tools. Miguel manages plugin issues from his phone using this interface.</figcaption>
+  <figcaption><strong>Red box shows:</strong> File Manager tool in the Files section. Miguel accesses his files and fixes plugin conflicts directly from his phone.</figcaption>
 </figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★☆☆</strong></p>
@@ -452,7 +569,7 @@ figcaption {
 
 <figure>
   <div class="zcom-cpanel-screenshot backup-wizard"></div>
-  <figcaption>cPanel Backup Wizard tool in the Files section. Miguel initiates weekly website backups directly from his smartphone.</figcaption>
+  <figcaption><strong>Red box shows:</strong> Backup Wizard tool in the Files section. Miguel runs full backups directly from his phone in just a few seconds.</figcaption>
 </figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★☆</strong></p>
@@ -478,7 +595,7 @@ figcaption {
 
 <figure>
   <div class="zcom-cpanel-screenshot metrics"></div>
-  <figcaption>cPanel Metrics section with analytics tools including Visitors, Bandwidth, Awstats, and Webalizer. Miguel reviews daily performance data from his phone browser.</figcaption>
+  <figcaption><strong>Red box shows:</strong> Metrics section with analytics tools (Visitors, Bandwidth, Awstats, Webalizer). Miguel reviews daily performance and traffic from his phone.</figcaption>
 </figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★★</strong></p>
@@ -496,7 +613,7 @@ figcaption {
 
 <figure>
   <div class="zcom-cpanel-screenshot redirects"></div>
-  <figcaption>cPanel Domains section showing Redirects tool. Miguel creates 301 redirects from his phone to maintain SEO value and site structure.</figcaption>
+  <figcaption><strong>Red box shows:</strong> Redirects tool in the Domains section. Miguel creates 301 redirects from his phone in minutes, preserving SEO value.</figcaption>
 </figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★★</strong></p>
@@ -619,17 +736,8 @@ figcaption {
   <p>Get reliable web hosting designed for entrepreneurs who need flexibility. Manage your site from your phone, desktop, or anywhere in between. Your business shouldn't be tied to a desk.</p>
   <div style="margin-top: 2rem;">
     <a href="https://web.z.com/ph/hosting/" class="zcom-cta-button" style="margin-right: 1rem;">Explore Web Hosting</a>
-    <a href="https://support.z.com/" class="zcom-cta-button" style="background-color: rgba(255,255,255,0.2); border: 2px solid white;">Visit Our Support Center</a>
+    <a href="https://support.z.com/" class="zcom-cta-button-secondary">Visit Our Support Center</a>
   </div>
-</div>
-
-<h2>Read Next</h2>
-
-<p style="margin-bottom: 2rem; font-size: 1.15rem;">Learn what other tools can help you save time managing your business:</p>
-
-<div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 6px; border-left: 4px solid #0066cc;">
-  <p style="margin: 0;"><strong>7 cPanel Tools That Save You Time Every Week</strong></p>
-  <p style="margin: 0.75rem 0 0 0; color: #666;">Discover the hosting control panel features most entrepreneurs ignore—and how to use them to automate repetitive tasks.</p>
 </div>
 
 </div>
