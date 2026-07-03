@@ -243,6 +243,57 @@ strong {
   font-weight: 600;
   color: #1a1a1a;
 }
+
+/* cPanel Screenshot Cropping */
+.zcom-cpanel-screenshot {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-image: url('https://web.z.com/ph/cms/wp-content/uploads/2026/07/imagescpanel-tools-scaled.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.zcom-cpanel-screenshot.file-manager {
+  height: 320px;
+  background-position: left center;
+}
+
+.zcom-cpanel-screenshot.backup-wizard {
+  height: 320px;
+  background-position: left center;
+}
+
+.zcom-cpanel-screenshot.ssl-status {
+  height: 280px;
+  background-position: left bottom;
+}
+
+.zcom-cpanel-screenshot.redirects {
+  height: 300px;
+  background-position: center center;
+}
+
+.zcom-cpanel-screenshot.metrics {
+  height: 340px;
+  background-position: left top;
+}
+
+figure {
+  margin: 2rem 0;
+  padding: 0;
+}
+
+figcaption {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.75rem;
+  font-style: italic;
+  line-height: 1.6;
+}
 </style>
 
 <div class="zcom-blog-content">
@@ -332,7 +383,7 @@ strong {
 <div style="background-color: #f5f5f5; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; border-left: 3px solid #0066cc;">
   <p style="margin: 0 0 1rem 0;"><strong>Before</strong></p>
   <p style="margin: 0 0 1.5rem 0;">Write down blog ideas, plan to update website later, forget about it.</p>
-  <p style="margin: 0 0 1rem 0; text-align: align: center; font-weight: bold; color: #0066cc;">↓</p>
+  <p style="margin: 0 0 1rem 0; text-align: center; font-weight: bold; color: #0066cc;">↓</p>
   <p style="margin: 0 0 1rem 0;"><strong>After</strong></p>
   <p style="margin: 0;">Publish blog post within 10 minutes of thinking of it, using only phone.</p>
 </div>
@@ -345,7 +396,10 @@ strong {
 
 <p>He checks his SSL status in seconds. Everything looks good—his security certificate is valid for another 6 months. The task takes 2 minutes from his phone. No laptop needed. Just opens the dashboard, confirms everything is secure, and moves on.</p>
 
-<p>[Screenshot: SSL Status]</p>
+<figure>
+  <div class="zcom-cpanel-screenshot ssl-status"></div>
+  <figcaption>cPanel Security section showing SSL/TLS Certificates. Miguel accesses this same tool from his phone browser.</figcaption>
+</figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★★</strong></p>
 
@@ -370,7 +424,10 @@ strong {
 
 <p>He tests the page using only his smartphone browser. The button works again. The customer is notified within 10 minutes. Crisis averted, using only a phone.</p>
 
-<p>[Screenshot: File Manager]</p>
+<figure>
+  <div class="zcom-cpanel-screenshot file-manager"></div>
+  <figcaption>cPanel Files section featuring File Manager and other file tools. Miguel manages plugin issues from his phone using this interface.</figcaption>
+</figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★☆☆</strong></p>
 
@@ -393,7 +450,10 @@ strong {
 
 <p>He selects "Full Website Backup" and initiates the process. The backup runs in the background while Miguel attends to other business tasks. Later, he'll download it to his phone for safe storage. One-click backup management, zero laptop involvement.</p>
 
-<p>[Screenshot: Backup Wizard]</p>
+<figure>
+  <div class="zcom-cpanel-screenshot backup-wizard"></div>
+  <figcaption>cPanel Backup Wizard tool in the Files section. Miguel initiates weekly website backups directly from his smartphone.</figcaption>
+</figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★☆</strong></p>
 
@@ -416,7 +476,10 @@ strong {
 
 <p>He sees which products attracted the most visitors today, which blog posts his customers are reading, and which traffic sources are performing best. This information helps him understand what's working for his business—all reviewed from his phone while sitting at a café.</p>
 
-<p>[Screenshot: Analytics Dashboard]</p>
+<figure>
+  <div class="zcom-cpanel-screenshot metrics"></div>
+  <figcaption>cPanel Metrics section with analytics tools including Visitors, Bandwidth, Awstats, and Webalizer. Miguel reviews daily performance data from his phone browser.</figcaption>
+</figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★★</strong></p>
 
@@ -431,7 +494,10 @@ strong {
 
 <p>He navigates to the Redirects section and creates a 301 redirect from the old product page to the new one. The task takes 3 minutes. His customers will never see a broken link, and his search engine rankings for that product page are preserved.</p>
 
-<p>[Screenshot: Redirects Manager]</p>
+<figure>
+  <div class="zcom-cpanel-screenshot redirects"></div>
+  <figcaption>cPanel Domains section showing Redirects tool. Miguel creates 301 redirects from his phone to maintain SEO value and site structure.</figcaption>
+</figure>
 
 <p><strong>📱 Mobile Friendliness: ★★★★★</strong></p>
 
