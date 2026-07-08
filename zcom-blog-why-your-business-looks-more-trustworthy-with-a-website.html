@@ -149,6 +149,91 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
   color: #0077cc;
 }
 
+.zcom-business-tip {
+  background: #fff9e9;
+  border-left: 4px solid #ffb300;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.zcom-business-tip-label {
+  display: block;
+  font-weight: 700;
+  color: #8a6100;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.zcom-business-tip p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.zcom-business-tip p + p {
+  margin-top: 0.5rem;
+}
+
+.zcom-before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.zcom-before-after-col {
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.zcom-before-col {
+  background: #fdf3f2;
+  border: 1px solid #f6d9d5;
+}
+
+.zcom-after-col {
+  background: #eefbf3;
+  border: 1px solid #c9ecd7;
+}
+
+.zcom-before-after-label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+}
+
+.zcom-before-col .zcom-before-after-label {
+  color: #c0392b;
+}
+
+.zcom-after-col .zcom-before-after-label {
+  color: #1f9d5a;
+}
+
+.zcom-before-after-col p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.zcom-before-after-col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 1.05rem;
+}
+
+.zcom-before-after-col li {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  .zcom-before-after {
+    grid-template-columns: 1fr;
+  }
+}
+
 .zcom-comparison-table {
   width: 100%;
   border-collapse: collapse;
@@ -385,6 +470,11 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
 
 <p>The seven details below are not complicated or expensive to set up, but together they change how a business feels to a customer who is deciding whether to send that first message.</p>
 
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>You do not need to fix everything at once. Pick one detail that feels easiest to add this week, then build on it. Small, steady improvements are what customers notice most.</p>
+</div>
+
 <h2>1. A Domain Name Makes Your Business Easier to Remember</h2>
 
 <div class="zcom-trust-card">
@@ -393,12 +483,44 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
 <p><strong>Example:</strong> A home-based bakery that takes most of its orders through Facebook Messenger can still benefit from a simple domain name printed on order stickers and receipts. Customers who want to check the full menu or place a repeat order later have a clear place to go, even if they first found the bakery on social media.</p>
 </div>
 
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>Customers don't remember complicated URLs. A short, memorable domain makes it easier for happy customers to return and recommend your business to others.</p>
+</div>
+
+<div class="zcom-before-after">
+<div class="zcom-before-after-col zcom-before-col">
+<span class="zcom-before-after-label">Before</span>
+<p>facebook.com/yourbusiness123456</p>
+</div>
+<div class="zcom-before-after-col zcom-after-col">
+<span class="zcom-before-after-label">After</span>
+<p>yourbusiness.com</p>
+</div>
+</div>
+
 <h2>2. A Professional Email Address Looks More Credible</h2>
 
 <div class="zcom-trust-card">
 <p>There is a noticeable difference between an inquiry that comes from a personal email account and one that comes from a <a href="https://web.z.com/ph/email-comparison/unlimited-email/">business email</a> address, such as hello@yourbusiness.com. The second one feels more established, even if both businesses are exactly the same size.</p>
 <p>A business email is also simply more practical. It keeps invoices, supplier communication, and customer inquiries organized and separate from personal messages. Customers who receive a reply from a business-branded email often feel more confident that they are dealing with a legitimate operation rather than an informal seller who might disappear after the sale.</p>
 <p><strong>Example:</strong> An online clothing seller who manages orders through Instagram and Shopee can still send order confirmations and receipts from a business email address. This small detail reassures customers that their payment and order details are being handled professionally.</p>
+</div>
+
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>A branded email makes every reply look intentional. Customers relax a little when your address matches your business name, especially when money or bookings are involved.</p>
+</div>
+
+<div class="zcom-before-after">
+<div class="zcom-before-after-col zcom-before-col">
+<span class="zcom-before-after-label">Before</span>
+<p>yourbusiness123@gmail.com</p>
+</div>
+<div class="zcom-before-after-col zcom-after-col">
+<span class="zcom-before-after-label">After</span>
+<p>sales@yourbusiness.com</p>
+</div>
 </div>
 
 <h2>3. The Padlock Icon Helps Customers Feel Safer</h2>
@@ -410,6 +532,11 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
 <p><strong>Example:</strong> A freelance designer sharing a portfolio site with a contact form benefits from this simple signal. A potential client filling in their name, budget, and project details feels more comfortable doing so on a site that shows the padlock icon.</p>
 </div>
 
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>You don't need to explain SSL to your customers. The padlock does the reassuring for you, quietly, every time someone visits your contact form.</p>
+</div>
+
 <h2>4. A Clear Contact Page Removes Doubt</h2>
 
 <div class="zcom-trust-card">
@@ -418,12 +545,38 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
 <p><strong>Example:</strong> A real estate agent who collects inquiries through a website form can list a direct phone number, office hours, and coverage areas on the contact page. A prospective buyer scanning listings late at night feels more confident leaving their details, knowing exactly how and when the agent will follow up.</p>
 </div>
 
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>The easier it is to reach you, the less customers worry about being ignored after they pay. A complete contact page turns hesitation into a message.</p>
+</div>
+
+<div class="zcom-before-after">
+<div class="zcom-before-after-col zcom-before-col">
+<span class="zcom-before-after-label">Before</span>
+<p>"Message us anytime."</p>
+</div>
+<div class="zcom-before-after-col zcom-after-col">
+<span class="zcom-before-after-label">After</span>
+<ul>
+<li>Phone Number</li>
+<li>Business Email</li>
+<li>Business Hours</li>
+<li>Business Address</li>
+</ul>
+</div>
+</div>
+
 <h2>5. Updated Content Shows the Business Is Active</h2>
 
 <div class="zcom-trust-card">
 <p>A website that still lists last year's promo, an outdated price list, or a "coming soon" page from months ago sends the wrong signal, even if the business is actually busy and thriving. Customers cannot tell the difference between a business that is quiet and one that has closed down.</p>
 <p>Refreshing your website with current announcements, updated pricing, or your latest offerings, even in small and simple ways, shows customers that someone is actively managing the business. This does not need to happen daily. Even a monthly update to a promo banner or a product list makes a noticeable difference in how current your business feels.</p>
 <p><strong>Example:</strong> A neighborhood coffee shop that promotes seasonal drinks or a new menu item on its website, alongside its usual Facebook posts, gives customers checking either place the same clear, current picture of what is available today.</p>
+</div>
+
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>A quick monthly update, like a new promo or price list, tells customers your business is active right now, not just when it first launched.</p>
 </div>
 
 <h2>6. Mobile-Friendly Design Builds Confidence Fast</h2>
@@ -435,11 +588,41 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
 <p><strong>Example:</strong> A clinic accepting appointment requests through its website needs patients to comfortably fill out a booking form from their phone while commuting or waiting in line elsewhere. A cramped, hard-to-read mobile layout can cost that appointment entirely.</p>
 </div>
 
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>Most of your customers are holding a phone, not sitting at a desk. A mobile-friendly site keeps them reading instead of giving up and scrolling elsewhere.</p>
+</div>
+
+<div class="zcom-before-after">
+<div class="zcom-before-after-col zcom-before-col">
+<span class="zcom-before-after-label">Before</span>
+<ul>
+<li>Tiny text</li>
+<li>Hard-to-tap buttons</li>
+<li>Horizontal scrolling</li>
+</ul>
+</div>
+<div class="zcom-before-after-col zcom-after-col">
+<span class="zcom-before-after-label">After</span>
+<ul>
+<li>Large readable text</li>
+<li>Easy navigation</li>
+<li>Fast loading</li>
+<li>Mobile-friendly layout</li>
+</ul>
+</div>
+</div>
+
 <h2>7. A Website Gives Your Business a Home Beyond Social Media</h2>
 
 <div class="zcom-trust-card">
 <p>Facebook, Instagram, and marketplace pages are genuinely useful, and many successful Philippine businesses run comfortably on these platforms every day. A website does not replace them. Instead, it gives your business a stable, official home base that exists independently of any single platform's algorithm, policy change, or temporary outage.</p>
 <p>When customers can verify your business details in more than one place, and those details match, it reinforces that your business is consistent and well-established. Think of your website and your social media pages as working together: social media builds everyday engagement and reach, while your website serves as the dependable place customers return to for confirmation.</p>
+</div>
+
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>Let social media spark the conversation and your website confirm the details. Customers who check both places usually feel the most confident about reaching out.</p>
 </div>
 
 <h2>Trust Signal vs Customer Confidence</h2>
@@ -563,6 +746,19 @@ llms_explanation: A beginner-friendly guide explaining how a professional websit
 <p>Start with a clean custom domain, add a business email, make sure your contact page is complete, and check that your site is easy to read on a phone. Tools like an <a href="https://web.z.com/ph/websites/aiwebsitebuilder/">AI Website Builder</a> can help you set this up quickly, even without design experience.</p>
 </div>
 
+</div>
+
+<h2>A Website Doesn't Replace Social Media</h2>
+
+<div class="zcom-trust-card">
+<p>Facebook and Instagram are excellent at what they do best: helping customers discover your business, browse your latest posts, and strike up a conversation. A website has a different, complementary job. It gives customers an official place to verify the details behind that conversation, on your own terms rather than a platform's news feed.</p>
+<p>Social media starts the conversation. A website builds the confidence that turns that conversation into a sale. Customers often check more than one source before they commit, and when your social pages and your website tell the same clear story, they feel more comfortable moving forward.</p>
+<p><strong>Example:</strong> A home-based bakery gains new customers through Facebook, while its website displays the latest menu, pricing, business hours, and ordering information. Customers can enjoy the everyday photos and updates on Facebook, then check the website whenever they need the full, current details before placing an order.</p>
+</div>
+
+<div class="zcom-business-tip">
+<span class="zcom-business-tip-label">Business Tip</span>
+<p>Think of social media as your storefront window and your website as your permanent business address. Customers often discover you through social media, but they trust you through your website.</p>
 </div>
 
 <p>Trust is rarely built by one big feature. It is built through many small, consistent details that reassure a customer bit by bit, until they feel comfortable enough to send that first message, book that appointment, or place that order. A domain, a business email, a padlock icon, a clear contact page, fresh content, and a mobile-friendly layout each play a small part, and together they add up to a business that feels reliable.</p>
